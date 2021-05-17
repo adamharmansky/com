@@ -1,4 +1,4 @@
 all:
-	cc com.c -lraylib -o com
+	cc com.c -lraylib -ldl -lpthread -lm -o com
 run: all
 	./com
